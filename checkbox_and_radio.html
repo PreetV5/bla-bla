@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Checkboxes and Radio Buttons</title>
+</head>
+<body>
+    <h2>Survey Form</h2>
+    <form action="/submit_form" method="post">
+        <h3>Select Your Hobbies:</h3>
+        <!-- Checkboxes allow multiple selections -->
+        <label><input type="checkbox" name="hobbies" value="reading"> Reading</label><br>
+        <label><input type="checkbox" name="hobbies" value="traveling"> Traveling</label><br>
+        <label><input type="checkbox" name="hobbies" value="sports"> Sports</label><br>
+        <label><input type="checkbox" name="hobbies" value="music"> Music</label><br>
+        
+        <h3>Select Your Gender:</h3>
+        <!-- Radio buttons allow only one selection -->
+        <label><input type="radio" name="gender" value="male"> Male</label><br>
+        <label><input type="radio" name="gender" value="female"> Female</label><br>
+        <label><input type="radio" name="gender" value="other"> Other</label><br>
+        
+        <h3>Select Your Preferred Contact Method:</h3>
+        <label><input type="radio" name="contact" value="email"> Email</label><br>
+        <label><input type="radio" name="contact" value="phone"> Phone</label><br>
+        <label><input type="radio" name="contact" value="mail"> Mail</label><br>
+        
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
